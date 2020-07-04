@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cloud Computing</title>
+
+	<meta name=”viewport” content=”width=device-width,  initial-scale=1, user-scalable=yes″>
+<meta name="description" content="The Curriculum Vitae of Joe Bloggs."/>
+<meta charset="UTF-8"> 
+
+</head>
+<style>
+
+	
+@viewport
+  {
+    width:extend-to-zoom;
+    zoom:1.0;
+  }
+@-ms-viewport
+  {
+     width:extend-to-zoom;
+    zoom:1.0;
+  }
+	
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+    }
+    
+    article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display:block;
+    }
+    
+    html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+    
+    .clear {clear: both;}
+    
+    p {
+        font-size: 1em;
+        line-height: 1.4em;
+        margin-bottom: 20px;
+        color: #444;
+    }
+    
+    #cv {
+        width: 90%;
+        max-width: 800px;
+        background: #f3f3f3;
+        margin: 30px auto;
+    }
+    
+    .mainDetails {
+        padding: 25px 35px;
+        border-bottom: 2px solid #cf8a05;
+        background: #ededed;
+    }
+    
+    #name h1 {
+        font-size: 2.5em;
+        font-weight: 700;
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+        margin-bottom: -6px;
+    }
+    
+    #name h2 {
+        font-size: 2em;
+        margin-left: 2px;
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+    }
+    
+    #mainArea {
+        padding: 0 40px;
+    }
+    
+    #headshot {
+        width: 12.5%;
+        float: left;
+        margin-right: 30px;
+    }
+    
+    #headshot img {
+        width: 100%;
+        height: auto;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+    }
+    
+    #name {
+        float: left;
+    }
+    
+    #contactDetails {
+        float: right;
+    }
+    
+    #contactDetails ul {
+        list-style-type: none;
+        font-size: 0.9em;
+        margin-top: 2px;
+    }
+    
+    #contactDetails ul li {
+        margin-bottom: 3px;
+        color: #444;
+    }
+    
+    #contactDetails ul li a, a[href^=tel] {
+        color: #444; 
+        text-decoration: none;
+        -webkit-transition: all .3s ease-in;
+        -moz-transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
+        -ms-transition: all .3s ease-in;
+        transition: all .3s ease-in;
+    }
+    
+    #contactDetails ul li a:hover { 
+        color: #cf8a05;
+    }
+    
+    
+    section {
+        border-top: 1px solid #dedede;
+        padding: 20px 0 0;
+    }
+    
+    section:first-child {
+        border-top: 0;
+    }
+    
+    section:last-child {
+        padding: 20px 0 10px;
+    }
+    
+    .sectionTitle {
+        float: left;
+        width: 25%;
+    }
+    
+    .sectionContent {
+        float: right;
+        width: 72.5%;
+    }
+    
+    .sectionTitle h1 {
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+        font-style: italic;
+        font-size: 1.5em;
+        color: #cf8a05;
+    }
+    
+    .sectionContent h2 {
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+        font-size: 1.5em;
+        margin-bottom: -2px;
+    }
+    
+    .subDetails {
+        font-size: 0.8em;
+        font-style: italic;
+        margin-bottom: 3px;
+    }
+    
+    .keySkills {
+        list-style-type: none;
+        -moz-column-count:3;
+        -webkit-column-count:3;
+        column-count:3;
+        margin-bottom: 20px;
+        font-size: 1em;
+        color: #444;
+    }
+    
+    .keySkills ul li {
+        margin-bottom: 3px;
+    }
+    
+    @media all and (min-width: 602px) and (max-width: 800px) {
+        #headshot {
+            display: none;
+        }
+        
+        .keySkills {
+        -moz-column-count:2;
+        -webkit-column-count:2;
+        column-count:2;
+        }
+    }
+    
+    @media all and (max-width: 601px) {
+        #cv {
+            width: 95%;
+            margin: 10px auto;
+            min-width: 280px;
+        }
+        
+        #headshot {
+            display: none;
+        }
+        
+        #name, #contactDetails {
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .sectionTitle, .sectionContent {
+            float: none;
+            width: 100%;
+        }
+        
+        .sectionTitle {
+            margin-left: -2px;
+            font-size: 1.25em;
+        }
+        
+        .keySkills {
+            -moz-column-count:2;
+            -webkit-column-count:2;
+            column-count:2;
+        }
+    }
+    
+    @media all and (max-width: 480px) {
+        .mainDetails {
+            padding: 15px 15px;
+        }
+        
+        section {
+            padding: 15px 0 0;
+        }
+        
+        #mainArea {
+            padding: 0 25px;
+        }
+    
+        
+        .keySkills {
+        -moz-column-count:1;
+        -webkit-column-count:1;
+        column-count:1;
+        }
+        
+        #name h1 {
+            line-height: .8em;
+            margin-bottom: 4px;
+        }
+    }
+    
+    @media print {
+        #cv {
+            width: 100%;
+        }
+    }
+    
+    @-webkit-keyframes reset {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @-webkit-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @-moz-keyframes reset {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @-moz-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes reset {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .instaFade {
+        -webkit-animation-name: reset, fade-in;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: ease-in;
+        
+        -moz-animation-name: reset, fade-in;
+        -moz-animation-duration: 1.5s;
+        -moz-animation-timing-function: ease-in;
+        
+        animation-name: reset, fade-in;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in;
+    }
+    
+    .quickFade {
+        -webkit-animation-name: reset, fade-in;
+        -webkit-animation-duration: 2.5s;
+        -webkit-animation-timing-function: ease-in;
+        
+        -moz-animation-name: reset, fade-in;
+        -moz-animation-duration: 2.5s;
+        -moz-animation-timing-function: ease-in;
+        
+        animation-name: reset, fade-in;
+        animation-duration: 2.5s;
+        animation-timing-function: ease-in;
+    }
+     
+    .delayOne {
+        -webkit-animation-delay: 0, .5s;
+        -moz-animation-delay: 0, .5s;
+        animation-delay: 0, .5s;
+    }
+    
+    .delayTwo {
+        -webkit-animation-delay: 0, 1s;
+        -moz-animation-delay: 0, 1s;
+        animation-delay: 0, 1s;
+    }
+    
+    .delayThree {
+        -webkit-animation-delay: 0, 1.5s;
+        -moz-animation-delay: 0, 1.5s;
+        animation-delay: 0, 1.5s;
+    }
+    
+    .delayFour {
+        -webkit-animation-delay: 0, 2s;
+        -moz-animation-delay: 0, 2s;
+        animation-delay: 0, 2s;
+    }
+    
+    .delayFive {
+        -webkit-animation-delay: 0, 2.5s;
+        -moz-animation-delay: 0, 2.5s;
+        animation-delay: 0, 2.5s;
+	}
+	
+
+    .headings
+    {
+        font-size: xx-large;
+    }
+    .mini-headings
+    {
+        font-size: x-large;
+        font-style: oblique;
+        color:darkgoldenrod
+    }
+
+
+
+
+
+
+</style>
+
+
+
+
+
+<body id="top">
+
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="data:image/jpeg;base64,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"/>
+		</div>
+		
+		<div id="name">
+			<h1 class="quickFade delayTwo">Cloud Computing</h1>
+			<!-- <h2 class="quickFade delayThree">DevOps</h2> -->
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+                <li>What is Cloud Computing ?</li>
+				<li>
+                    Cloud Computing Architecture
+                </li>
+                <li>Cloud Computing Technologies</li>
+                <!-- <li>How Linux processes work.</li> -->
+                <li>How does cloud computing work ?</li>
+                <li>Types of Cloud</li>
+                <li>Cloud Service Models</li>
+                <li>AWS,AZURE and GCP</li>
+                <li>Virtualization</li>
+
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+
+
+
+
+
+	    <div id="mainArea" class="quickFade delayFive">
+		    
+            <p>
+                <center>
+                    <h1 class="headings">
+                        What is Cloud Computing ?
+                    </h1>
+                </center> <br>
+                The term cloud refers to a network or the internet. It is a technology that uses remote servers on the internet to store, manage, and access data online rather than local drives. The data can be anything such as files, images, documents, audio, video, and more.
+                <br><br>
+                We can do the following using cloud computing:
+                <br>• Developing new applications and services<br>
+                • Storage, back up, and recovery of data<br>
+                • Hosting blogs and websites<br>
+                • Delivery of software on demand<br>
+                • Analysis of data<br>
+                • Streaming videos and audios<br> 
+                <br><p class="mini-headings">
+                    Why Cloud Computing ?
+                </p>
+                Small as well as large IT companies, follow the traditional methods to provide the IT infrastructure. That means for any IT company, we need a Server Room that is the basic need of IT companies.
+                <br><br>
+                In that server room, there should be a database server, mail server, networking, firewalls, routers, modem, switches, QPS (Query Per Second means how much queries or load will be handled by the server), configurable system, high net speed, and the maintenance engineers.
+                <br><br>
+                To establish such IT infrastructure, we need to spend lots of money. To overcome all these problems and to reduce the IT infrastructure cost, Cloud Computing comes into existence.
+                <br>
+                <p class="mini-headings">
+                    Characteristics Of Cloud Computing
+                </p>
+                <div style="color: darkblue;">Agility</div>
+                The cloud works in a distributed computing environment. It shares resources among users and works very fast.
+                <br><br><div style="color: darkblue;">High availability and reliability</div>
+                The availability of servers is high and more reliable because the chances of infrastructure failure are minimum.
+
+                <br><br><div style="color: darkblue;">Scalability</div>
+                Cloud offers "on-demand" provisioning of resources on a large scale, without having engineers for peak loads.
+
+                <br><br><div style="color: darkblue;">Multi-Sharing</div>
+                With the help of cloud computing, multiple users and applications can work more efficiently with cost reductions by sharing common infrastructure.
+
+                <br><br><div style="color: darkblue;">Device and Location Independence</div>
+                Cloud computing enables the users to access systems using a web browser regardless of their location or what device they use e.g. PC, mobile phone, etc. As infrastructure is off-site (typically provided by a third-party) and accessed via the Internet, users can connect from anywhere.
+
+                <br><br><div style="color: darkblue;">Maintenance</div>
+                Maintenance of cloud computing applications is easier, since they do not need to be installed on each user's computer and can be accessed from different places. So, it reduces the cost also.
+
+                <br><br><div style="color: darkblue;">Low Cost</div>
+                By using cloud computing, the cost will be reduced because to take the services of cloud computing, IT company need not to set its own infrastructure and pay-as-per usage of resources.
+
+                <br><br><div style="color: darkblue;">Services in the pay-per-use mode</div>
+                Application Programming Interfaces (APIs) are provided to the users so that they can access services on the cloud by using these APIs and pay the charges as per the usage of services.
+            </p> <hr>
+
+
+            <p>
+                <center>
+                    <h1 class="headings">
+                        Cloud Computing Architecture
+                    </h1>
+                </center> <br>
+                Cloud computing technology is used by both small and large organizations to store the information in cloud and access it from anywhere at anytime using the internet connection.
+                <br><br>
+                Cloud computing architecture is a combination of service-oriented architecture and event-driven architecture.
+                <br><br>
+                Cloud computing architecture is divided into the following two parts -<br>
+                <br><div style="color:darkblue"> Front-end :</div> 
+                Used by the client. It contains client-side interfaces and applications that are required to access the cloud computing platforms. The front end includes web servers (including Chrome, Firefox, internet explorer, etc.), thin & fat clients, tablets, and mobile devices.
+                <br><br><div style="color: darkblue;">Back-end :</div>
+                The back end is used by the service provider. It manages all the resources that are required to provide cloud computing services. It includes a huge amount of data storage, security mechanism, virtual machines, deploying models, servers, traffic control mechanisms, etc.
+                <br><br>
+                <center>
+                    <img src="assets/CLOUD/1.png">
+                </center><br>
+
+            
+            
+            
+            
+            
+            </p> <hr>
+
+
+            <p>
+                <center>
+                    <h1 class="headings">
+                        How does cloud works ?
+                    </h1>
+                </center> <br>
+                Assume that you are an executive at a very big corporation. Your particular responsibilities include to make sure that all of your employees have the right hardware and software they need to do their jobs. To buy computers for everyone is not enough. You also have to purchase software as well as software licenses and then provide these softwares to your employees as they require. Whenever you hire a new employee, you need to buy more software or make sure your current software license allows another user. It is so stressful that you have to spend lots of money.
+                <br><br>
+                But, there may be an alternative for executives like you. So, instead of installing a suite of software for each computer, you just need to load one application. That application will allow the employees to log-in into a Web-based service which hosts all the programs for the user that is required for his/her job. Remote servers owned by another company and that will run everything from e-mail to word processing to complex data analysis programs. It is called cloud computing, and it could change the entire computer industry.
+                <br><br>
+                In a cloud computing system, there is a significant workload shift. Local computers have no longer to do all the heavy lifting when it comes to run applications. But cloud computing can handle that much heavy load easily and automatically. Hardware and software demands on the user's side decrease. The only thing the user's computer requires to be able to run is the cloud computing interface software of the system, which can be as simple as a Web browser and the cloud's network takes care of the rest.
+            
+            </p> <hr>
+
+
+            <p>
+                <center>
+                    <h1 class="headings">
+                        Types Of Cloud
+                    </h1>
+                </center> <br>
+                <center>
+                    <img src="assets/CLOUD/2.png">
+                </center><br><br>
+                <div style="color: darkblue;">Public Cloud</div>
+                Public cloud is open to all to store and access information via the Internet using the pay-per-usage method.
+                In public cloud, computing resources are managed and operated by the Cloud Service Provider (CSP).
+                <br> <center>
+                    <img src="assets/CLOUD/3.png">
+                </center><br><br>
+                Few Points for Public Cloud :<br><br>
+                • Public cloud is owned at a lower cost than the private and hybrid cloud.<br>
+                • Public cloud is maintained by the cloud service provider, so no worry about the maintenance.<br>
+                • Public cloud is easier to integrate. Hence it offers a better flexibility approach to consumers.<br>
+                • Public cloud is location independent because its services are delivered through the internet.<br>
+                • Public cloud is highly scalable as per the requirement of computing resources.<br>
+                • It is accessible by the general public, so there is no limit to the number of users.<br>
+
+                • Public Cloud is less secure because resources are shared publicly.<br>
+                • Performance depends upon the high-speed internet network link to the cloud provider.<br>
+                • The Client has no control of data.<br>
+                <br>
+
+
+                <br><br><div style="color: darkblue;">Private Cloud</div>
+                Private cloud is also known as an internal cloud or corporate cloud. It is used by organizations to build and manage their own data centers internally or by the third party. It can be deployed using Opensource tools such as Openstack and Eucalyptus.
+                <br><br><center>
+                    <img src="assets/CLOUD/4.png">
+                </center><br><br>
+                Few Points for Private Cloud :<br>
+                <br>
+                • Private cloud provides a high level of security and privacy to the users.<br>
+                • Private cloud offers better performance with improved speed and space capacity.<br>
+                • It allows the IT team to quickly allocate and deliver on-demand IT resources.<br>
+                • The organization has full control over the cloud because it is managed by the organization itself. So, there is no need for the organization to depends on anybody.<br>
+                • It is suitable for organizations that require a separate cloud for their personal use and data security is the first priority.<br>
+
+                • Skilled people are required to manage and operate cloud services.<br>
+                • Private cloud is accessible within the organization, so the area of operations is limited.<br>
+                • Private cloud is not suitable for organizations that have a high user base, and organizations that do not have the prebuilt infrastructure, sufficient manpower to maintain and manage the cloud.<br>
+
+                <br><br><div style="color: darkblue;">Hybrid Cloud</div>
+                Hybrid Cloud = Public Cloud + Private Cloud
+<br><br>
+Hybrid cloud is partially secure because the services which are running on the public cloud can be accessed by anyone, while the services which are running on a private cloud can be accessed only by the organization's users.
+<br><br>
+Example: Google Application Suite (Gmail, Google Apps, and Google Drive), Office 365 (MS Office on the Web and One Drive), Amazon Web Services.
+                <br><center>
+                    <img src="assets/CLOUD/5.png">
+                </center><br><br>
+                Few Points for Hybrid Cloud :<br><br>
+                • Hybrid cloud is suitable for organizations that require more security than the public cloud.<br>
+                • Hybrid cloud helps you to deliver new products and services more quickly.<br>
+                • Hybrid cloud provides an excellent way to reduce the risk.<br>
+                • Hybrid cloud offers flexible resources because of the public cloud and secure resources because of the private cloud.<br>
+
+                • In Hybrid Cloud, security feature is not as good as the private cloud.<br>
+                • Managing a hybrid cloud is complex because it is difficult to manage more than one type of deployment model.<br>
+                • In the hybrid cloud, the reliability of the services depends on cloud service providers.<br>
+
+
+                <br><br><div style="color: darkblue;">Community Cloud</div>
+                Community cloud allows systems and services to be accessible by a group of several organizations to share the information between the organization and a specific community. It is owned, managed, and operated by one or more organizations in the community, a third party, or a combination of them.
+<br><br>
+Example: Health Care community cloud
+                <br><br>
+                <center>
+                    <img src="assets/CLOUD/6.png">
+                </center><br><br>
+                Few Points for Community Cloud : <br><br>
+                • Community cloud is cost-effective because the whole cloud is being shared by several organizations or communities.<br>
+                • Community cloud is suitable for organizations that want to have a collaborative cloud with more security features than the public cloud.<br>
+                • It provides better security than the public cloud.<br>
+                • It provdes collaborative and distributive environment.<br>
+                • Community cloud allows us to share cloud resources, infrastructure, and other capabilities among various organizations.<br>
+
+                • Community cloud is not a good choice for every organization.<br>
+                • Security features are not as good as the private cloud.<br>
+                • It is not suitable if there is no collaboration.<br>
+                • The fixed amount of data storage and bandwidth is shared among all community members.<br>
+
+
+            </p> <hr>
+
+
+            <p>
+                <center>
+                    <h1 class="headings">
+                        Cloud Service Models
+                    </h1>
+                </center> <br>
+            <div style="color: darkblue;">Infrastructure as a Service (IaaS)</div>
+            IaaS is also known as Hardware as a Service (HaaS). It is a computing infrastructure managed over the internet. The main advantage of using IaaS is that it helps users to avoid the cost and complexity of purchasing and managing the physical servers.
+            <br><br>
+            Example: DigitalOcean, Linode, Amazon Web Services (AWS), Microsoft Azure, Google Compute Engine (GCE), Rackspace, and Cisco Metacloud.
+                <br><br>
+                Features : <br><br>
+                • Resources are available as a service<br>
+                • Services are highly scalable<br>
+                • Dynamic and flexible<br>
+                • GUI and API-based access<br>
+                • Automated administrative tasks<br>
+
+
+            <br><br><div style="color: darkblue;">Platform as a Service (PaaS)</div>
+            PaaS cloud computing platform is created for the programmer to develop, test, run, and manage the applications.
+            <br><br>
+            Example: AWS Elastic Beanstalk, Windows Azure, Heroku, Force.com, Google App Engine, Apache Stratos, Magento Commerce Cloud, and OpenShift.
+            <br><br>
+            Features :
+            <br><br>• Accessible to various users via the same development application.<br>
+            • Integrates with web services and databases.<br>
+            • Builds on virtualization technology, so resources can easily be scaled up or down as per the organization's need.<br>
+            • Support multiple languages and frameworks.<br>
+            • Provides an ability to "Auto-scale".<br>
+
+
+
+
+            <br><br><div style="color: darkblue;">Software as a Service (SaaS)</div>
+            SaaS is also known as "on-demand software". It is a software in which the applications are hosted by a cloud service provider. Users can access these applications with the help of internet connection and web browser.
+            <br><br>
+            Example: BigCommerce, Google Apps, Salesforce, Dropbox, ZenDesk, Cisco WebEx, ZenDesk, Slack, and GoToMeeting.
+            <br><br>Features :
+            <br><br>• Managed from a central location<br>
+            • Hosted on a remote server<br>
+            • Accessible over the internet<br>
+            • Users are not responsible for hardware and software updates. Updates are applied automatically.<br>
+            • The services are purchased on the pay-as-per-use basis<br>
+
+
+            
+            </p> <hr>
+
+
+            <p>
+                <center>
+                    <h1 class="headings">
+                       Comparision of Cloud Services Providers
+                    </h1>
+                </center> <br>
+                <center>
+                    <img src="assets/CLOUD/8.png" width="720px">
+                </center>
+
+
+                <center>
+                    <img src="assets/CLOUD/9.png" width="720px">
+                </center>
+
+
+                <center>
+                    <img src="assets/CLOUD/10.png" width="720px">
+                </center>
+            </p> <hr>
+
+
+            <p>
+                <center>
+                    <h1 class="headings">
+                        Virtualization in Cloud Computing
+                    </h1>
+                </center> <br>
+                Virtualization is the "creation of a virtual (rather than actual) version of something, such as a server, a desktop, a storage device, an operating system or network resources".
+<br><br>
+                In other words, Virtualization is a technique, which allows to share a single physical instance of a resource or an application among multiple customers and organizations. It does by assigning a logical name to a physical storage and providing a pointer to that physical resource when demanded.
+                <br><br>
+                <div class="mini-headings">
+                    Concept behind the Virtualization
+                </div>
+                Creation of a virtual machine over existing operating system and hardware is known as Hardware Virtualization. A Virtual machine provides an environment that is logically separated from the underlying hardware.
+                <br>
+                <br>The machine on which the virtual machine is going to create is known as Host Machine and that virtual machine is referred as a Guest Machine
+                <br>
+                <br><div class="mini-headings">
+                    Types of Virtualization
+                </div>
+                <br><div style="color: darkblue;">Hardware Virtualization</div>
+                When the virtual machine software or virtual machine manager (VMM) is directly installed on the hardware system is known as hardware virtualization.
+The main job of hypervisor is to control and monitoring the processor, memory and other hardware resources.
+After virtualization of hardware system we can install different operating system on it and run different applications on those OS.
+<br><br>
+Usage:<br>
+Hardware virtualization is mainly done for the server platforms, because controlling virtual machines is much easier than controlling a physical server.
+
+                <br><br><div style="color: darkblue;">Operating system Virtualization</div>
+                When the virtual machine software or virtual machine manager (VMM) is installed on the Host operating system instead of directly on the hardware system is known as operating system virtualization.
+                <br><br>
+Usage:<br>
+
+Operating System Virtualization is mainly used for testing the applications on different platforms of OS.
+
+                <br><br><div style="color: darkblue;">Server Virtualization</div>
+                When the virtual machine software or virtual machine manager (VMM) is directly installed on the Server system is known as server virtualization.
+<br><br>
+Usage:<br>
+
+Server virtualization is done because a single physical server can be divided into multiple servers on the demand basis and for balancing the load.
+
+                <br><br><div style="color: darkblue;">Storage Virtualization</div>
+                Storage virtualization is the process of grouping the physical storage from multiple network storage devices so that it looks like a single storage device.
+
+Storage virtualization is also implemented by using software applications.
+<br><br>
+Usage:<br>
+
+Storage virtualization is mainly done for back-up and recovery purposes.
+
+<br><br><div style="color: darkblue;">Data Virtualization</div>
+Data virtualization is the process of retrieve data from various resources without knowing its type and physical location where it is stored. It collects heterogeneous data from different resources and allows data users across the organization to access this data according to their work requirements. This heterogeneous data can be accessed using any application such as web portals, web services, E-commerce, Software as a Service (SaaS), and mobile application.
+<br><br>
+We can use Data Virtualization in the field of data integration, business intelligence, and cloud computing.
+
+
+<br><br>
+<div class="mini-headings">How does virtualization work in cloud computing?</div>
+Virtualization plays a very important role in the cloud computing technology, normally in the cloud computing, users share the data present in the clouds like application etc, but actually with the help of virtualization users shares the Infrastructure.
+<br><br>
+The main usage of Virtualization Technology is to provide the applications with the standard versions to their cloud users, suppose if the next version of that application is released, then cloud provider has to provide the latest version to their cloud users and practically it is possible because it is more expensive.
+<br><br>
+To overcome this problem we use basically virtualization technology, By using virtualization, all severs and the software application which are required by other cloud providers are maintained by the third party people, and the cloud providers has to pay the money on monthly or annual basis.
+           <br>
+           <br>
+           
+           <center>
+            <img src="assets/CLOUD/11.png">
+        </center><br><br>
+           Mainly Virtualization means, running multiple operating systems on a single machine but sharing all the hardware resources. And it helps us to provide the pool of IT resources so that we can share these IT resources in order get benefits in the business.
+           
+           
+           
+           
+            </p> <hr>
+
+         
+		
+	    </div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
